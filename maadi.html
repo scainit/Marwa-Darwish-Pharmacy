@@ -15,7 +15,7 @@
     .eyebrow{font-size:12px;color:#b8d8c8;margin:0 0 4px;letter-spacing:.4px}h1{font-size:30px;line-height:1.35;margin:0 0 7px;font-weight:800}.intro{color:#d0dfd7;font-size:14px;line-height:1.9;margin:0 auto 25px;max-width:350px}
     .section{display:flex;align-items:center;gap:10px;text-align:right;margin:24px 2px 11px;color:#e7f1eb;font-size:15px;font-weight:700}.section:before{content:"";width:4px;height:21px;border-radius:5px;background:#a9d1b9}
     .links{display:grid;gap:10px}.link{width:100%;display:flex;align-items:center;gap:13px;border:1px solid #dce8e0;background:#f5f8f5;color:#17352e;border-radius:15px;padding:13px 15px;font:700 15px "Cairo",sans-serif;text-align:right;min-height:57px;box-shadow:0 5px 14px #061b1626;cursor:default}
-    .ico{width:34px;height:34px;flex:0 0 34px;border-radius:11px;background:#e2eee6;color:#3e7059;display:grid;place-items:center;font-size:18px}.label{display:flex;flex-direction:column;gap:0}.label small{font-size:10px;font-weight:500;color:#71877b}.link.social{min-height:54px}.link.action{background:#e9f1eb}
+    .ico{width:34px;height:34px;flex:0 0 34px;border-radius:11px;background:#e2eee6;color:#3e7059;display:grid;place-items:center;font-size:18px}.ico-img{width:36px;height:36px;flex:0 0 36px;object-fit:contain;border-radius:9px}.label{display:flex;flex-direction:column;gap:0}.label small{font-size:10px;font-weight:500;color:#71877b}.link.social{min-height:54px}.link.action{background:#e9f1eb}
     .note{color:#a8c0b4;font-size:11px;margin:18px 0 0}footer{color:#8fa99c;font-size:11px;margin-top:28px}
   </style>
 </head>
@@ -29,23 +29,23 @@
 
     <h2 class="section">تابعنا على السوشيال ميديا</h2>
     <section class="links" aria-label="صفحات التواصل الاجتماعي">
-      <button class="link social" type="button"><span class="ico">f</span><span class="label">فيسبوك<small>تابع آخر أخبارنا</small></span></button>
-      <button class="link social" type="button"><span class="ico">♪</span><span class="label">تيك توك<small>شوف محتوى الصيدلية</small></span></button>
-      <button class="link social" type="button"><span class="ico">◎</span><span class="label">إنستجرام<small>خليك قريب مننا</small></span></button>
+      <button class="link social" type="button"><img class="ico-img" src="face.png" alt=""><span class="label">فيسبوك<small>تابع آخر أخبارنا</small></span></button>
+      <button class="link social" type="button"><img class="ico-img" src="tik-tok.png" alt=""><span class="label">تيك توك<small>شوف محتوى الصيدلية</small></span></button>
+      <button class="link social" type="button"><img class="ico-img" src="instagram.png" alt=""><span class="label">إنستجرام<small>خليك قريب مننا</small></span></button>
     </section>
 
     <h2 class="section">تواصل معانا</h2>
     <section class="links" aria-label="وسائل التواصل">
-      <button class="link" type="button"><span class="ico">◉</span><span class="label">واتساب<small>ابعتلنا رسالة مباشرة</small></span></button>
-      <a class="link action" href="https://ipn.eg/S/mohamedashraf01070/instapay/27GkMd" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><span class="ico">ج</span><span class="label">ادفع عبر InstaPay<small>اضغط هنا لإتمام الدفع</small></span></a>
-      <button class="link" type="button"><span class="ico">☎</span><span class="label">اتصل بينا – الرقم الأول<small>يسعدنا اتصالك</small></span></button>
-      <button class="link" type="button"><span class="ico">☎</span><span class="label">اتصل بينا – الرقم الثاني<small>اختار وسيلة التواصل المناسبة</small></span></button>
+      <button class="link" type="button"><img class="ico-img" src="whatsapp.png" alt=""><span class="label">واتساب<small>ابعتلنا رسالة مباشرة</small></span></button>
+      <a class="link action" href="https://ipn.eg/S/mohamedashraf01070/instapay/27GkMd" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><img class="ico-img" src="images.png" alt=""><span class="label">ادفع عبر InstaPay<small>اضغط هنا لإتمام الدفع</small></span></a>
+      <button class="link" type="button"><img class="ico-img" src="phone.png" alt=""><span class="label">اتصل بينا – الرقم الأول<small>يسعدنا اتصالك</small></span></button>
+      <button class="link" type="button"><img class="ico-img" src="phone.png" alt=""><span class="label">اتصل بينا – الرقم الثاني<small>اختار وسيلة التواصل المناسبة</small></span></button>
     </section>
 
     <h2 class="section">زورنا وشاركنا رأيك</h2>
     <section class="links" aria-label="الموقع والتقييم">
-      <button class="link action" type="button"><span class="ico">⌖</span><span class="label">موقع الفرع<small>اعرف طريقك لينا على الخريطة</small></span></button>
-      <button class="link action" type="button"><span class="ico">★</span><span class="label">قيّمنا على Google<small>رأيك يفرق معانا — شاركنا تقييمك</small></span></button>
+      <button class="link action" type="button"><img class="ico-img" src="google-maps.png" alt=""><span class="label">موقع الفرع<small>اعرف طريقك لينا على الخريطة</small></span></button>
+      <button class="link action" type="button"><img class="ico-img" src="google rate.png" alt=""><span class="label">قيّمنا على Google<small>رأيك يفرق معانا — شاركنا تقييمك</small></span></button>
     </section>
     <p class="note">كل اللي تحتاجه، تلاقيه عندنا 💚</p>
     <footer>صيدلية مروة درويش · فرع المعادي</footer>
