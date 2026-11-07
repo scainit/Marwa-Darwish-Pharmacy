@@ -9,26 +9,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    *{box-sizing:border-box}body{margin:0;min-height:100vh;padding:28px 18px;background:radial-gradient(circle at 50% 0,#244b43 0,#102b28 48%,#0b1d1b 100%);font-family:"Cairo",Arial,sans-serif;color:#fff}.wrap{width:min(100%,480px);margin:30px auto;text-align:center}.back{display:inline-block;color:#c5d5ce;text-decoration:none;font-size:13px;margin-bottom:30px}.mark{width:58px;height:58px;margin:0 auto 18px;border:1px solid #b8d8c8;border-radius:19px;display:grid;place-items:center;color:#c7e4d4;font-size:27px}h1{font-size:30px;margin:0 0 5px}.hint{color:#b9d7c7;margin:0 0 27px;font-size:14px}.links{display:grid;gap:11px}.link{width:100%;border:1px solid #d7e4dc;background:#f4f7f4;color:#17352e;border-radius:14px;padding:14px 18px;font:600 16px "Cairo",sans-serif;text-align:center;cursor:default}.link span{margin-left:8px;color:#507b68}footer{color:#91aaa0;font-size:12px;margin-top:28px}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px 17px 38px;background:radial-gradient(ellipse at 50% -10%,#315e50 0,#173a32 43%,#0b1d1b 100%);font-family:"Cairo",Arial,sans-serif;color:#fff}
+    .wrap{width:min(100%,490px);margin:12px auto;text-align:center}.back{display:inline-flex;align-items:center;gap:7px;color:#c5d9cf;text-decoration:none;font-size:13px;margin-bottom:25px}
+    .mark{width:62px;height:62px;margin:0 auto 15px;border:1px solid #b8d8c8;border-radius:21px;display:grid;place-items:center;color:#d4ecdf;font-size:29px;box-shadow:0 8px 28px #061b1680}
+    .eyebrow{font-size:12px;color:#b8d8c8;margin:0 0 4px;letter-spacing:.4px}h1{font-size:30px;line-height:1.35;margin:0 0 7px;font-weight:800}.intro{color:#d0dfd7;font-size:14px;line-height:1.9;margin:0 auto 25px;max-width:350px}
+    .section{display:flex;align-items:center;gap:10px;text-align:right;margin:24px 2px 11px;color:#e7f1eb;font-size:15px;font-weight:700}.section:before{content:"";width:4px;height:21px;border-radius:5px;background:#a9d1b9}
+    .links{display:grid;gap:10px}.link{width:100%;display:flex;align-items:center;gap:13px;border:1px solid #dce8e0;background:#f5f8f5;color:#17352e;border-radius:15px;padding:13px 15px;font:700 15px "Cairo",sans-serif;text-align:right;min-height:57px;box-shadow:0 5px 14px #061b1626;cursor:default}
+    .ico{width:34px;height:34px;flex:0 0 34px;border-radius:11px;background:#e2eee6;color:#3e7059;display:grid;place-items:center;font-size:18px}.label{display:flex;flex-direction:column;gap:0}.label small{font-size:10px;font-weight:500;color:#71877b}.link.social{min-height:54px}.link.action{background:#e9f1eb}
+    .note{color:#a8c0b4;font-size:11px;margin:18px 0 0}footer{color:#8fa99c;font-size:11px;margin-top:28px}
   </style>
 </head>
 <body>
   <main class="wrap">
-    <a class="back" href="index.html">→ اختيار فرع آخر</a>
+    <a class="back" href="index.html">→ <span>الرجوع لاختيار الفرع</span></a>
     <div class="mark" aria-hidden="true">✚</div>
-    <h1>فرع المعادي</h1>
-    <p class="hint">صيدلية مروة درويش</p>
-    <section class="links" aria-label="روابط الفرع">
-      <button class="link" type="button"><span>●</span> فيسبوك</button>
-      <button class="link" type="button"><span>♪</span> تيك توك</button>
-      <button class="link" type="button"><span>◎</span> إنستجرام</button>
-      <button class="link" type="button"><span>◉</span> واتساب</button>
-      <button class="link" type="button"><span>☎</span> اتصال – الرقم الأول</button>
-      <button class="link" type="button"><span>☎</span> اتصال – الرقم الثاني</button>
-      <button class="link" type="button"><span>⌖</span> موقع الفرع</button>
-      <button class="link" type="button"><span>★</span> قيّمنا على Google</button>
+    <p class="eyebrow">أهلاً بيك في</p>
+    <h1>صيدلية مروة درويش</h1>
+    <p class="intro">فرع المعادي<br>يسعدنا وجودك معانا — تابع صفحاتنا وتواصل معانا في أي وقت.</p>
+
+    <h2 class="section">تابعنا على السوشيال ميديا</h2>
+    <section class="links" aria-label="صفحات التواصل الاجتماعي">
+      <button class="link social" type="button"><span class="ico">f</span><span class="label">فيسبوك<small>تابع آخر أخبارنا</small></span></button>
+      <button class="link social" type="button"><span class="ico">♪</span><span class="label">تيك توك<small>شوف محتوى الصيدلية</small></span></button>
+      <button class="link social" type="button"><span class="ico">◎</span><span class="label">إنستجرام<small>خليك قريب مننا</small></span></button>
     </section>
-    <footer>صيدلية مروة درويش</footer>
+
+    <h2 class="section">تواصل معانا</h2>
+    <section class="links" aria-label="وسائل التواصل">
+      <button class="link" type="button"><span class="ico">◉</span><span class="label">واتساب<small>ابعتلنا رسالة مباشرة</small></span></button>
+      <button class="link" type="button"><span class="ico">☎</span><span class="label">اتصل بينا – الرقم الأول<small>يسعدنا اتصالك</small></span></button>
+      <button class="link" type="button"><span class="ico">☎</span><span class="label">اتصل بينا – الرقم الثاني<small>اختار وسيلة التواصل المناسبة</small></span></button>
+    </section>
+
+    <h2 class="section">زورنا وشاركنا رأيك</h2>
+    <section class="links" aria-label="الموقع والتقييم">
+      <button class="link action" type="button"><span class="ico">⌖</span><span class="label">موقع الفرع<small>اعرف طريقك لينا على الخريطة</small></span></button>
+      <button class="link action" type="button"><span class="ico">★</span><span class="label">قيّمنا على Google<small>رأيك يفرق معانا — شاركنا تقييمك</small></span></button>
+    </section>
+    <p class="note">كل اللي تحتاجه، تلاقيه عندنا 💚</p>
+    <footer>صيدلية مروة درويش · فرع المعادي</footer>
   </main>
 </body>
 </html>
