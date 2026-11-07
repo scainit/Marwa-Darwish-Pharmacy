@@ -20,13 +20,16 @@
     .section{display:flex;align-items:center;gap:10px;text-align:right;margin:24px 2px 11px;color:#f7edf7;font-size:15px;font-weight:700}
     .section:before{content:"";width:4px;height:21px;border-radius:5px;background:#d9b85f}
     .links{display:grid;gap:10px}
-    .link{width:100%;display:flex;align-items:center;gap:13px;border:1px solid #eaddec;background:#fcf9fc;color:#3d1944;border-radius:15px;padding:13px 15px;font:700 15px "Cairo",sans-serif;text-align:right;min-height:57px;box-shadow:0 5px 14px #16091d30;cursor:default}
+    .link{width:100%;display:flex;align-items:center;gap:13px;border:1px solid #eaddec;background:#fcf9fc;color:#3d1944;border-radius:15px;padding:13px 15px;font:700 15px "Cairo",sans-serif;text-align:right;min-height:57px;box-shadow:0 5px 14px #16091d30;cursor:pointer;text-decoration:none;transition:transform .18s,background .18s,box-shadow .18s}
+    .link:hover{transform:translateY(-2px);background:#fff;box-shadow:0 8px 18px #16091d45}
+    .link:focus-visible{outline:3px solid #d9b85f;outline-offset:3px}
     .ico{width:34px;height:34px;flex:0 0 34px;border-radius:11px;background:#f0e4f1;color:#704275;display:grid;place-items:center;font-size:18px}
     .ico-img{width:36px;height:36px;flex:0 0 36px;object-fit:contain;border-radius:9px}
     .label{display:flex;flex-direction:column;gap:0}
     .label small{font-size:10px;font-weight:500;color:#866d89}
     .link.social{min-height:54px}
     .link.action{background:#f8f0df;border-color:#ead7a8}
+    .link.action:hover{background:#fff8e9}
     .note{color:#e1c9e3;font-size:11px;margin:18px 0 0}
     footer{color:#c9aaca;font-size:11px;margin-top:28px}
   </style>
@@ -41,25 +44,26 @@
 
     <h2 class="section">تابعنا على السوشيال ميديا</h2>
     <section class="links" aria-label="صفحات التواصل الاجتماعي">
-      <button class="https://www.facebook.com/share/1TT7nBvprN/" type="button"><img class="ico-img" src="face.png" alt=""><span class="label">فيسبوك<small>تابع آخر أخبارنا</small></span></button>
-      <button class=https://www.instagram.com/marwa_darwish_pharmacies?exln=MWEzbzRuc3I1ZHQweA=="" type="button"><img class="ico-img" src="instagram.png" alt=""><span class="label">إنستجرام<small>خليك قريب مننا</small></span></button>
+      <a class="link social" href="https://www.facebook.com/share/1TT7nBvprN/" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="face.png" alt=""><span class="label">فيسبوك<small>تابع آخر أخبارنا</small></span></a>
+      <a class="link social" href="https://www.instagram.com/marwa_darwish_pharmacies?exln=MWEzbzRuc3I1ZHQweA==" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="instagram.png" alt=""><span class="label">إنستجرام<small>خليك قريب مننا</small></span></a>
     </section>
 
     <h2 class="section">الدفع عبر InstaPay</h2>
     <section class="links" aria-label="الدفع عبر InstaPay">
-      <a class="link action" href="https://ipn.eg/S/mohamedashraf01070/instapay/27GkMd" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><img class="ico-img" src="images.png" alt=""><span class="label">ادفع عبر InstaPay<small>اضغط هنا لإتمام الدفع</small></span></a>
+      <a class="link action" href="https://ipn.eg/S/mohamedashraf01070/instapay/27GkMd" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="images.png" alt=""><span class="label">ادفع عبر InstaPay<small>اضغط هنا لإتمام الدفع</small></span></a>
     </section>
 
     <h2 class="section">تواصل معانا</h2>
     <section class="links" aria-label="وسائل التواصل">
-      <a class="link" href="https://wa.me/201098895250" style="text-decoration:none"><img class="ico-img" src="whatsapp.png" alt=""><span class="label">واتساب<small>01098895250</small></span></a>
-      <a class="link" href="tel:0227058185" style="text-decoration:none"><img class="ico-img" src="phone.png" alt=""><span class="label">اتصل بينا – الرقم الأول<small>0227058185</small></span></a>
-      <a class="link" href="tel:01119562852" style="text-decoration:none"><img class="ico-img" src="phone.png" alt=""><span class="label">اتصل بينا – الرقم الثاني<small>01119562852</small></span></a>
+      <a class="link" href="https://wa.me/201098895250" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="whatsapp.png" alt=""><span class="label">واتساب<small>01098895250</small></span></a>
+      <a class="link" href="tel:0227058185"><img class="ico-img" src="phone.png" alt=""><span class="label">اتصل بينا – الرقم الأول<small>0227058185</small></span></a>
+      <a class="link" href="tel:01119562852"><img class="ico-img" src="phone.png" alt=""><span class="label">اتصل بينا – الرقم الثاني<small>01119562852</small></span></a>
+      <a class="link" href="tel:01098895250"><img class="ico-img" src="phone.png" alt=""><span class="label">اتصل بينا – الرقم الثالث<small>01098895250</small></span></a>
     </section>
 
     <h2 class="section">زورنا</h2>
     <section class="links" aria-label="موقع الفرع">
-      <a class="link action" href="https://www.google.com/maps/place/29%C2%B058'15.6%22N+31%C2%B016'03.1%22E/@29.9710083,31.2649542,17z/data=!3m1!4b1!4m4!3m3!8m2!3d29.9710083!4d31.2675291?hl=en&entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><img class="ico-img" src="google-maps.png" alt=""><span class="label">موقع الفرع<small>افتح موقعنا على Google Maps</small></span></a>
+      <a class="link action" href="https://www.google.com/maps/place/29%C2%B058'15.6%22N+31%C2%B016'03.1%22E/@29.9710083,31.2649542,17z/data=!3m1!4b1!4m4!3m3!8m2!3d29.9710083!4d31.2675291?hl=en&entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="google-maps.png" alt=""><span class="label">موقع الفرع<small>افتح موقعنا على Google Maps</small></span></a>
     </section>
     <p class="note">كل اللي تحتاجه، تلاقيه عندنا 💜</p>
     <footer>صيدلية مروة درويش · فرع المعادي</footer>
