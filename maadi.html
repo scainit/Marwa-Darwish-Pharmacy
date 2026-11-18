@@ -44,15 +44,16 @@
 
     <h2 class="section">تابعنا على السوشيال ميديا</h2>
     <section class="links" aria-label="صفحات التواصل الاجتماعي">
-      <a class="link social" href="https://www.facebook.com/share/1TT7nBvprN/" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="face.png" alt=""><span class="label">فيسبوك<small>تابع آخر أخبارنا</small></span></a>
+      <a class="link social" href="https://www.facebook.com/share/1J4RZRtrqY/" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="face.png" alt=""><span class="label">فيسبوك<small>تابع آخر أخبارنا</small></span></a>
       <a class="link social" href="https://www.instagram.com/marwa_darwish_pharmacies?exln=MWEzbzRuc3I1ZHQweA==" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="instagram.png" alt=""><span class="label">إنستجرام<small>خليك قريب مننا</small></span></a>
     <a class="link social" href="https://www.tiktok.com/@marwadarwish.pharma" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="tik-tok.png" alt=""><span class="label">تيك توك<small>تابعنا على تيك توك</small></span></a>
     </section>
 
     <h2 class="section">الدفع عبر InstaPay</h2>
     <section class="links" aria-label="الدفع عبر InstaPay">
-      <a class="link action" href="https://ipn.eg/S/marwa830204/instapay/5msgfI" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="images.png" alt=""><span class="label">ادفع عبر InstaPay<small>اضغط هنا لإتمام الدفع</small></span></a>
+      <a class="link action" href="https://ipn.eg/S/marwa830204/instapay/5msgfI" target="_blank" rel="noopener noreferrer"><img class="ico-img" src="images.png" alt=""><span class="label">الدفع من خلال إنستاباي<small>اضغط هنا لإتمام الدفع</small></span></a>
     </section>
+      <button class="link action" type="button" id="walletCopy"><img class="ico-img" src="phone.png" alt=""><span class="label">الدفع من خلال المحفظة<small id="walletStatus"></small></span></button>
 
     <h2 class="section">تواصل معانا</h2>
     <section class="links" aria-label="وسائل التواصل">
@@ -69,5 +70,17 @@
     <p class="note">كل اللي تحتاجه، تلاقيه عندنا 💜</p>
     <footer>صيدلية مروة درويش · فرع المعادي</footer>
   </main>
+<script>
+  const walletNumber = "";
+  document.getElementById("walletCopy").addEventListener("click", async () => {
+    if (!walletNumber) return;
+    try {
+      await navigator.clipboard.writeText(walletNumber);
+      document.getElementById("walletStatus").textContent = "تم نسخ الرقم";
+    } catch (error) {
+      document.getElementById("walletStatus").textContent = "تعذر النسخ تلقائياً";
+    }
+  });
+</script>
 </body>
 </html>
